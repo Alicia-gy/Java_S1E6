@@ -6,13 +6,13 @@ public class App {
 		
 		String obj1 = "patata";
 		String obj2 = "sandia";
-		int obj3 = 27;
+		String obj3 = "mandarina";
 		
-		NoGenericMethods<Object> ngm1 = new NoGenericMethods<>(obj1, obj2, obj3);
-		NoGenericMethods<Object> ngm2 = new NoGenericMethods<>(obj3, obj2, obj1);
+		NoGenericMethods ngm1 = new NoGenericMethods(obj1, obj2, obj3);
+		NoGenericMethods ngm2 = new NoGenericMethods(obj3, obj2, obj1);
 		
-		System.out.println(ngm1.toString());
-		System.out.println(ngm2.toString());
+		System.out.println("Objecte1: \n" + ngm1.toString());
+		System.out.println("Objecte2: \n" + ngm2.toString());
 
 
 
